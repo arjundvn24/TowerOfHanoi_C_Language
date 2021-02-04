@@ -6,16 +6,14 @@ For instance, if there are 50 students in the class and if the class has to be d
 
 PT sir asks your help to automate this team splitting task. Can you please help him out?*/
 #include <stdio.h>
-
-
 int main(){
-    int x;
-    puts("Enter the number:\n");
-    scanf("%d",&x);
-    
-  x%2==0?printf("Even"):printf("Odd");
-  return 0;
-
-   
-    
+    int x,y;
+    printf("Number of students:\n");
+   scanf("%d",&x);
+    printf("Number of teams:\n");
+    scanf("%d",&y);
+    int each=x/y;
+    int left=x%y;
+    printf("The number of students in each team is %d and left out is %d",each,left);
+    return 0;
 }
